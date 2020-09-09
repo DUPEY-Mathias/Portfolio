@@ -1,0 +1,222 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.2.75",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "name" : "Light",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                4.076245307922363,
+                5.903861999511719,
+                -1.0054539442062378
+            ]
+        },
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.483536034822464,
+                0.33687159419059753,
+                -0.20870360732078552,
+                0.7804827094078064
+            ],
+            "translation" : [
+                7.358891487121582,
+                4.958309173583984,
+                6.925790786743164
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "FaceBuilderHead"
+        },
+        {
+            "name" : "fbCamObj",
+            "rotation" : [
+                0.007087275385856628,
+                -0.7470813393592834,
+                0.6646831035614014,
+                -0.003952345345169306
+            ],
+            "translation" : [
+                -0.10722360759973526,
+                1.8444578647613525,
+                -16.16683578491211
+            ]
+        },
+        {
+            "name" : "fbCamObj.001",
+            "rotation" : [
+                0.4801745116710663,
+                -0.4925481975078583,
+                0.5650644302368164,
+                0.45555558800697327
+            ],
+            "translation" : [
+                -15.533681869506836,
+                -1.5834320783615112,
+                -1.581689715385437
+            ]
+        },
+        {
+            "name" : "fbCamObj.003",
+            "rotation" : [
+                0.4419196844100952,
+                0.5178099870681763,
+                -0.5730743408203125,
+                0.45625168085098267
+            ],
+            "translation" : [
+                15.099709510803223,
+                -0.7812764048576355,
+                -2.6652581691741943
+            ]
+        },
+        {
+            "name" : "fbCamObj.004",
+            "rotation" : [
+                0.6743877530097961,
+                0.0019840786699205637,
+                0.006860918365418911,
+                0.738342821598053
+            ],
+            "translation" : [
+                -0.13190139830112457,
+                1.3985456228256226,
+                16.488916397094727
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "kt_facebuilder_material",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "FaceBuilderHead_mesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "kt_facebuilder_texture",
+            "uri" : "texture/kt_facebuilder_texture.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 17308,
+            "max" : [
+                0.7787555456161499,
+                1.2020931243896484,
+                1.2641816139221191
+            ],
+            "min" : [
+                -0.8013969659805298,
+                -1.0284627676010132,
+                -0.6160479187965393
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 17308,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 17308,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 103146,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 207696,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 207696,
+            "byteOffset" : 207696
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 138464,
+            "byteOffset" : 415392
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 206292,
+            "byteOffset" : 553856
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 760148,
+            "uri" : "scene.bin"
+        }
+    ]
+}

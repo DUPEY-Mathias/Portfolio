@@ -1,0 +1,224 @@
+<!-- 
+  Ah! I See You Are A Man Of Culture As Well.
+
+  Je vous en prie, je vous invite à regarder une partie de mon code
+  dans les moindres détails, si en revanche vous vous demandez comment
+  j'ai bien pu faire pour faire bouger cette tête, sachez simplement
+  qu'il s'agit de Three.js reconnaissable au "Canvas". J'ai ici uttilisé un
+  Loader GLTFL pour pouvoir charger mes modèles 3D plus rapidement et stablement
+  sur le Web. Ma tête quant à elle à été prise en photo par mon téléphone, photo qui,
+  une fois sur blender, m'ont permis de me représenter aussi adroitement que je le pouvais.
+  Pour tout autre information ou simplement me dire bonjour, je vous invite à me contacter
+  sur mon adresse mail disponible au bas de cette page.
+
+  Portez vous bien.
+
+  -Mathias
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Mathias</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+	integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+  <div class="cursor"></div>
+  <div class="fader"></div>
+  <video id="videoBG" poster="poster.JPG" autoplay muted loop>
+    <source src="video/f2.mp4" type="video/mp4">
+</video>
+
+  <div class="container content1">
+    <div class="row">
+      <div class="col-lg text-white text-center">
+        <h1 class="fade-in" style="font-weight:100; margin-top:-100px;">La plupart du temps, les gens ne savent pas ce
+          qu'ils veulent avant
+          que vous le leur montriez.</h1>
+        <h3 class="fade-in2">-Steve Jobs</h3>
+      </div>
+      <div class="scroll-down"></div>
+    </div>
+  </div>
+
+  <div class="container content2">
+    <div class="row">
+      <div class="col-lg-6 text-center text-lg-right">
+        <h2>Bonjour!</br> Je suis <span>Mathias</span>, développeur et entrepreneur basé sur Paris.</h2>
+      </div>
+      <div class="col-lg-6 text-center text-lg-left">
+        <p>Je suis passionné par l'innovation et le développement qui améliorent la vie de ceux qui m'entourent. Je me spécialise dans
+          le développement de sites webs et applications pour des clients allant de particuliers aux grandes entreprises
+          et sociétés. Que feriez-vous si vous aviez un développeur portée de main?</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 text-center">
+        <img src="img/precise.png" class="rounded" alt="...">
+        <h3>Code</br>Précis</h3>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <img src="img/love.png" class="rounded" alt="...">
+        <h3>Avec</br>Amour</h3>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <img src="img/creative.png" class="rounded" alt="...">
+        <h3>Toujours</br>Créatif</h3>
+      </div>
+      <div class="col-lg-3 col-md-6 text-center">
+        <img src="img/resembling.png" class="rounded" alt="...">
+        <h3>Et qui vous</br>ressemble</h3>
+      </div>
+    </div>
+  </div>
+
+        
+
+  <div id="face">
+    <script src="./three.min.js"></script>
+    <script src="./GLTFLoader.js"></script>
+    <script src="./app.js"></script>
+  </div>
+  <div class="container content3">
+    <div class="row">
+      <div class="col-lg-12 text-center text-white" id="c3h">
+        <h2>Mes Expériences</h2>
+        <p>(Oui, c'est moi...)</p>
+      </div>
+    </div>
+    <div class="row" id="exp">
+      <div class="col-lg-4 text-center text-white">
+        <h3>Scolaire</h3>
+        <ul>
+          <li>
+            <b>Baccalauréat Scientifique</b><br>
+            <i>2017-2018</i><br>
+            <p>Acquisition du BAC S au Lycée Léonard De Vinci</p>
+          </li>
+          <li>
+            <b>Cambridge et TOEFL niveau C1</b><br>
+            <i>2018-2019</i><br>
+            <p>Diplômes d'Anglais attestant du niveau C1</p>
+          </li>
+          <li>
+            <b>Double diplôme IIM/ESILV</b><br>
+            <i>2018-2023</i><br>
+            <p>Double diplôme à l'Institut de l'Internet de du Multimédia et à L'École Supérieure d'Ingénieurs Léonard de Vinci</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+
+      </div>
+      <div class="col-lg-4 text-center text-white">
+        <h3>Professionel</h3>
+        <ul>
+          <li>
+            <b>Co-Fondateur AlphaScan3D</b><br>
+            <i>2019-Présent</i><br>
+            <p>Start-up s’appuyant sur la métrologie laser et la
+              photogrammétrie.</p>
+          </li>
+          <li>
+            <b>Formateur</b><br>
+            <i>2020-Présent</i><br>
+            <p>Réalisation d’ateliers pour les PME en stratégies marketing et transformation digitale</p>
+          </li>
+          <li>
+            <b>Freelance</b><br>
+            <i>2020-Présent</i><br>
+            <p>Conception, expertise et développement de
+              sites web et applications</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12" id="skills">
+        <button type="button"class="btn btn-outline-light btn-block">CMS : WordPress - WooCommerce</button>
+        <button type="button"class="btn btn-outline-light btn-block">Langages : HTML 5, CSS 3, JS ES6, PHP 7</button>
+        <button type="button"class="btn btn-outline-light btn-block">Frameworks : Symfony, React, ThreeJS, JQuery, Bootstrap, Twig</button>
+        <button type="button"class="btn btn-outline-light btn-block">Autres : Formations, Audit, Gestion de projets, Soft Skills</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid contact">
+    <div class="row">
+      <div class="col-lg text-white text-center">
+        <h2>Contact</h2>
+        <img src="img/mail.png" class="rounded" alt="...">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-3 text-white text-center">
+        <h3>Voyons de quoi nous sommes capable</h3>
+        <p>mathias.dupey@gmail.com</p>
+        <form enctype="text/plain" action="mailto:mathias.dupey@gmail.com" method="POST">
+          <input id="sujet" class="form-control" name="Sujet" type="text" placeholder="Sujet"/>
+          <textarea id="texte" class="form-control" name="Contenu" rows="3"></textarea>
+          <input id="envoie" class="btn btn-outline-light" type="submit" value="Envoyer un mail"/>
+      </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer class="page-footer font-small special-color-dark">
+    <div class="footer-copyright text-center text-white">
+      <a href="https://www.linkedin.com/in/mathias-dupey-71a474182" class="btn btn-light" role="button" aria-pressed="true">
+        <img src="img/linkedin.png" class="rounded" alt="...">
+      </a>
+      </button>
+      <p>©2020 Dupey Mathias. Tous droits réservés</p>
+    </div>
+  </footer>
+
+
+
+
+  <div class="loader-wrapper">
+    <span class="loader"><img src="img/loader.gif" class="rounded" alt="..."></span></span>
+  </div>
+  <script>
+      $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+      });
+  </script>
+
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Optional JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
