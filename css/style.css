@@ -44,12 +44,14 @@ p {
   position: fixed;
   z-index: -2;
 }
+
 @media (min-aspect-ratio: 16/9) {
   #videoBG {
     width: 100%;
     height: auto;
   }
 }
+
 @media (max-aspect-ratio: 16/9) {
   #videoBG {
     width: auto;
@@ -108,35 +110,43 @@ p {
     -webkit-transform: translate(0, -10px) rotate(45deg);
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     -webkit-transform: translate(0, 10px) rotate(45deg);
     opacity: 0;
   }
 }
+
 @-moz-keyframes fade_move_down {
   0% {
     -moz-transform: translate(0, -10px) rotate(45deg);
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     -moz-transform: translate(0, 10px) rotate(45deg);
     opacity: 0;
   }
 }
+
 @keyframes fade_move_down {
   0% {
     transform: translate(0, -10px) rotate(45deg);
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     transform: translate(0, 10px) rotate(45deg);
     opacity: 0;
@@ -306,13 +316,16 @@ footer p {
   -o-animation: fadeIn ease 3s;
   -ms-animation: fadeIn ease 3s;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -322,9 +335,11 @@ footer p {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -334,9 +349,11 @@ footer p {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -346,9 +363,11 @@ footer p {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -358,9 +377,11 @@ footer p {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -373,13 +394,16 @@ footer p {
   -o-animation: fadeIn2 ease 6s;
   -ms-animation: fadeIn2 ease 6s;
 }
+
 @keyframes fadeIn2 {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -389,9 +413,11 @@ footer p {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -401,9 +427,11 @@ footer p {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -413,9 +441,11 @@ footer p {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -425,9 +455,11 @@ footer p {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -444,10 +476,11 @@ footer p {
   background-color: #1b1b1b;
   z-index: 100;
 }
+
 .loader {
   display: flex;
-  width: 300px;
-  height: 300px;
+  width: 480px;
+  height: 480px;
   position: flex;
   margin: 30vh auto;
 }
