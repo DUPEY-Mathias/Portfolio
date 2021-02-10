@@ -38,14 +38,13 @@
 <body>
 
 
-
   <div class="cursor"></div>
   <div class="fader"></div>
   <video id="videoBG" poster="poster.JPG" autoplay muted loop>
     <source src="video/f2.mp4" type="video/mp4">
   </video>
 
-  <div class="container content1">
+  <div class="container" id="content1">
     <div class="row">
       <div class="col-lg text-white text-center">
         <h1 class="fade-in" style="font-weight:100; margin-top:-100px;">La plupart du temps, les gens ne savent pas ce
@@ -53,19 +52,22 @@
           que vous le leur montriez.</h1>
         <h3 class="fade-in2">-Steve Jobs</h3>
       </div>
-      <div class="scroll-down"></div>
     </div>
   </div>
 
-  <div class="container content2">
+
+  <a class="btn scroll-down" id="scroller" href="#scroller"></a>
+
+  <div class="container" id="content2">
     <div class="row">
       <div class="col-lg-6 text-center text-lg-right">
-        <h2>Bonjour!</br> Je suis <span>Mathias</span>, développeur et entrepreneur basé sur Paris.</h2>
+        <h2>Bonjour!</br> Je suis <span>Mathias</span>, développeur et entrepreneur basé sur Paris.
+        </h2>
       </div>
       <div class="col-lg-6 text-center text-lg-left">
         <p>Je suis passionné par l'innovation et le développement qui améliorent la vie de ceux qui m'entourent. Je me
           spécialise dans
-          le développement web et applications pour des clients allant de particuliers aux grandes entreprises
+          le développement web et la programmation pour des clients allant de particuliers aux grandes entreprises
           et sociétés. Que feriez-vous si vous aviez un développeur portée de main ?</p>
       </div>
     </div>
@@ -96,7 +98,7 @@
     <script src="./GLTFLoader.js"></script>
     <script src="./app.js"></script>
   </div>
-  <div class="container content3">
+  <div class="container-fluid" id="content3">
     <div class="row">
       <div class="col-lg-12 text-center text-white" id="c3h">
         <h2>Mes Expériences</h2>
@@ -104,66 +106,72 @@
       </div>
     </div>
     <div class="row" id="exp">
-      <div class="col-lg-4 text-center text-white">
+      <div class="col-lg-6 text-center text-white">
         <h3>Scolaire</h3>
         <ul>
           <li>
+            <b>Bac +3</b><br> - IIM<br>
+            <i>2021</i><br>
+            <p>Bachelor développement
+              web et mobile, intégrer les
+              dernières évolutions telles
+              que les objets connectés
+              ou le BigData.</p>
+          </li>
+          <li>
+            <b>TOEFL</b><br> - Niv.C1<br>
+            <i>2019</i><br>
+            <p>Diplômes d'Anglais de Cambridge et du TOEFL attestant du niveau C1</p>
+          </li>
+          <li>
             <b>Baccalauréat Scientifique</b><br>
-            <i>2017-2018</i><br>
+            <i>2018</i><br>
             <p>Acquisition du BAC S au Lycée Léonard De Vinci</p>
-          </li>
-          <li>
-            <b>Cambridge et TOEFL niveau C1</b><br>
-            <i>2018-2019</i><br>
-            <p>Diplômes d'Anglais attestant du niveau C1</p>
-          </li>
-          <li>
-            <b>Double diplôme IIM/ESILV</b><br>
-            <i>2018-2023</i><br>
-            <p>Double diplôme à l'Institut de l'Internet de du Multimédia et à L'École Supérieure d'Ingénieurs Léonard
-              de Vinci</p>
           </li>
         </ul>
       </div>
-      <div class="col-lg-4">
-
-      </div>
-      <div class="col-lg-4 text-center text-white">
+      <div class="col-lg-6 text-center text-white">
         <h3>Professionel</h3>
         <ul>
           <li>
-            <b>Co-Fondateur AlphaScan3D</b><br>
-            <i>2019-Présent</i><br>
-            <p>Start-up s’appuyant sur la métrologie laser et la
-              photogrammétrie.</p>
-          </li>
-          <li>
-            <b>Formateur</b><br>
-            <i>2020-Présent</i><br>
+            <b>Chef de Projet Digital</b><br> - LaMachine<br>
+            <i>2020-2021</i><br>
             <p>Réalisation d’ateliers pour les PME en stratégies marketing et transformation digitale</p>
           </li>
           <li>
-            <b>Freelance</b><br>
+            <b>Auto-entrepreneur</b><br> - Développeur<br>
             <i>2020-Présent</i><br>
             <p>Conception, expertise et développement de
               sites web et applications</p>
           </li>
+          <li>
+            <b>Co-Fondateur</b><br> - AlphaScan3D<br>
+            <i>2019-Présent</i><br>
+            <p>Start-up s’appuyant sur la métrologie laser et la
+              photogrammétrie.</p>
+          </li>
         </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-12" id="skills">
-        <button type="button" class="btn btn-outline-light btn-block">CMS : WordPress - WooCommerce</button>
-        <button type="button" class="btn btn-outline-light btn-block">Langages : HTML 5, CSS 3, JS ES6, PHP 7</button>
-        <button type="button" class="btn btn-outline-light btn-block">Frameworks : Symfony, React, VueJS, ThreeJS,
-          JQuery, Bootstrap, Twig</button>
-        <button type="button" class="btn btn-outline-light btn-block">Autres : Formations, Audit, Chef de projets, Soft
-          Skills</button>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid contact">
+  <div class="container" id="content4">
+
+    <div class="row">
+      <div class="col-lg-12" id="skills">
+        <button type="button" class="btn btn-outline-light btn-block">Langages : HTML 5, CSS 3, JS ES6, PHP 7, PYTHON
+          3</button>
+        <button type="button" class="btn btn-outline-light btn-block">Frameworks : ReactJS, NodeJS, ThreeJS, Symfony
+          JQuery, Bootstrap, Twig</button>
+        <button type="button" class="btn btn-outline-light btn-block">CMS : WordPress - WooCommerce</button>
+        <button type="button" class="btn btn-outline-light btn-block">Autres : Formation, Audit, Gestion de Projet,
+          GitHub, Soft Skills</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid" id="contact">
     <div class="row">
       <div class="col-lg text-white text-center">
         <h2>Contact</h2>
@@ -174,11 +182,8 @@
       <div class="col-lg-3 text-white text-center">
         <h3>Voyons de quoi nous sommes capable</h3>
         <p>mathias.dupey@gmail.com</p>
-        <form enctype="text/plain" action="mailto:mathias.dupey@gmail.com" method="POST">
-          <input id="sujet" class="form-control" name="Sujet" type="text" placeholder="Sujet" />
-          <textarea id="texte" class="form-control" name="Contenu" rows="3"></textarea>
-          <input id="envoie" class="btn btn-outline-light" type="submit" value="Envoyer un mail" />
-        </form>
+        <button id="envoie" class="btn btn-outline-light" onclick="location.href='mailto:mathias.dupey@gmail.com';"
+          value="Envoyer un mail">Envoyer un mail</button>
       </div>
     </div>
   </div>
@@ -192,7 +197,6 @@
         aria-pressed="true">
         <img src="img/linkedin.png" class="rounded" alt="...">
       </a>
-      </button>
       <p>©2020 Dupey Mathias. Tous droits réservés</p>
     </div>
   </footer>
@@ -215,10 +219,10 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+    </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
+    </script>
 
   <!-- Optional JavaScript -->
   <script src="js/script.js"></script>

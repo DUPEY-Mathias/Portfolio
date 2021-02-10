@@ -4,6 +4,7 @@ html {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -61,22 +62,22 @@ p {
 
 /*------- CONTENT 1 ------*/
 
-.content1 {
+#content1 {
   max-width: calc(350px + 25vw);
   justify-content: center;
   min-height: 75vh;
 }
 
-.content1 .row {
+#content1 .row {
   color: white;
   text-shadow: 3px 3px 8px #000000;
 }
 
-.content1 h1 {
+#content1 h1 {
   padding-top: 300px;
 }
 
-.content1 h3 {
+#content1 h3 {
   font-size: calc(27px + 2vw);
   font-style: italic;
   margin-top: 50px;
@@ -92,8 +93,8 @@ p {
   z-index: 5;
   text-decoration: none;
   text-shadow: 0;
-  width: 30px;
-  height: 30px;
+  width: 50px !important;
+  height: 50px !important;
   border-bottom: 4px solid #fff;
   border-right: 4px solid #fff;
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
@@ -155,54 +156,54 @@ p {
 
 /*------- CONTENT 2 ------*/
 
-.content2 {
+#content2 {
   min-height: 100vh;
   padding: 250px 0;
 }
 
-.content2 .row {
+#content2 .row {
   margin-top: 150px;
   color: white;
 }
 
-.content2 h2 {
+#content2 h2 {
   font-weight: 700;
   font-size: 45px;
 }
 
-.content2 span {
+#content2 span {
   font-style: italic;
 }
 
-.content2 h3 {
+#content2 h3 {
   font-size: 20px;
   font-weight: lighter;
   letter-spacing: 1px;
   margin-top: 19px;
 }
 
-.content2 p {
+#content2 p {
   padding: 0 0 0 20px;
   font-weight: 100;
 }
 
-.content2 img {
+#content2 img {
   width: 75px;
 }
 
 /*------- CONTENT 3 ------*/
 
-.content3 {
+#content3 {
   min-height: 100vh;
   margin-top: 200px;
 }
 
-.content3 h2 {
+#content3 h2 {
   font-weight: 700;
   font-size: 45px;
 }
 
-.content3 h3 {
+#content3 h3 {
   font-weight: bold;
   font-style: italic;
   font-size: 35px;
@@ -222,31 +223,28 @@ p {
   margin-top: 150px;
 }
 
-.content3 ul {
+#content3 ul {
   list-style-type: none;
   padding: 0;
-  max-width: 200px;
+  max-width: 250px;
   margin: auto;
 }
 
-.content3 li {
+#content3 li {
   margin-top: 50px;
 }
 
-.content3 li b {
+#content3 li b {
   font-size: 22px;
 }
 
-.content3 li p {
+#content3 li p {
   font-size: 14px;
   margin-top: 5px;
 }
 
-#skills {
-  margin-top: 50px;
-}
 
-.content3 button {
+#content3 button {
   pointer-events: none;
 }
 
@@ -254,30 +252,34 @@ p {
   #exp {
     margin-top: 450px;
   }
+
+  #skills {
+    margin-top: 50px;
+  }
 }
 
 /*------- CONTACT ------*/
 
-.contact {
+#contact {
   margin-top: 300px;
   min-height: 100vh;
 }
 
-.contact h2 {
+#contact h2 {
   font-weight: bolder;
 }
 
-.contact img {
+#contact img {
   width: 100px;
 }
 
-.contact h3 {
+#contact h3 {
   margin-top: 20vh;
   font-weight: bolder;
   font-size: 45px;
 }
 
-.contact p {
+#contact p {
   font-style: italic;
   font-weight: lighter;
 }
@@ -297,7 +299,7 @@ p {
 /*------- Footer ------*/
 
 footer {
-  background-color: #0c0c0c;
+  background-color: transparent;
   height: 125px;
   padding-top: 15px;
 }
@@ -494,6 +496,10 @@ footer p {
     --25-x: calc(var(--m-x) * 25%);
     --25-y: calc(var(--m-y) * 25%);
     cursor: none;
+  }
+
+  .btn{
+    cursor: none !important;
   }
 
   .cursor {
